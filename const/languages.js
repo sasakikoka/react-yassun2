@@ -1,8 +1,9 @@
 export const LANGUAGES = [
-    'JavaScript',
+    'java',
     'C++',
+    'Rust',
+    'Python',
     'Ruby',
-    'Java',
-    'PHP',
-    'Go'
-  ];
+    'F#',
+    'Clojure'
+]

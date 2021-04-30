@@ -4,24 +4,22 @@ import { Form } from "./Form";
 import { LANGUAGES } from "./const/languages";
 
 function App() {
-
-  const [tab, setTab] = useState('list');
+  const [tab, settab] = useState('list');
   const [langs, setLangs] = useState(LANGUAGES);
+
   const addLang = (lang) => {
-    console.log(lang);
     setLangs([...langs, lang]);
-    setTab('list');
+    settab('list');
   }
-  
-return (
+  return (
     <div>
       <header>
         <ul>
-          <li onClick={() => setTab('list')}>リスト</li>
-          <li onClick={() => setTab('form')}>フォーム</li>
+          <li onClick={() => settab('list')}>リスト</li>
+          <li onClick={() => settab('form')}>フォーム</li>
         </ul>
       </header>
-      <hr />
+      <hr/>
       {
         tab === 'list' ? <List langs={langs}/> : <Form onAddLang={addLang}/>
       }
