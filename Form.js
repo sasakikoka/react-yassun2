@@ -5,7 +5,7 @@ export const Form = ({ onAddLang }) => { // 変更
 
   const submitForm = (e) => {
     e.preventDefault();
-    onAddLang(text); // 変更
+    onAddLang(text);
   }
 
   return (
