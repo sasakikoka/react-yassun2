@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button } from "./components/button";
+import { Button } from './components/button';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -18,7 +18,6 @@ const Input = styled.input`
   padding: 4px 8px;
   border: 1px solid black;
 `
-
 const ButtonContainer = styled.div`
   margin-top: 24px;
 `
